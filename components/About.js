@@ -14,7 +14,7 @@ const FACTS = [
   },
   {
     label: "Studying",
-    value: "B.Tech Computer Science, Thapar Institute — CGPA 7.8"
+    value: "B.Tech Computer Science, Thapar Institute"
   },
   {
     label: "Certified",
