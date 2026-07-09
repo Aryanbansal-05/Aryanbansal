@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 
+
 const FACTS = [
   {
     label: "Based in",
@@ -75,7 +76,7 @@ export default function About() {
   return (
     <section id="about" className="border-b border-line">
       <div className="section-container py-20">
-        <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr]">
+        <div className="grid gap-12 lg:grid-cols-[1fr_1fr] lg:items-center">
           <RevealSection>
             <p className="eyebrow text-retrieve">About</p>
             <h2 className="mt-3 font-display text-3xl font-semibold text-text">
@@ -101,7 +102,9 @@ export default function About() {
             </div>
           </RevealSection>
 
-          <RevealSection>
+
+
+          <RevealSection className="lg:col-span-2">
             <div className="space-y-5 text-text-muted leading-relaxed">
               <p>
                 Most of my work starts from a system that already exists and
@@ -125,7 +128,7 @@ export default function About() {
               </p>
             </div>
 
-            <dl className="mt-8 grid grid-cols-1 gap-4 border-t border-line pt-6 sm:grid-cols-2">
+            <dl className="mt-8 grid grid-cols-1 gap-4 border-t border-line pt-6 sm:grid-cols-2 lg:grid-cols-4">
               {FACTS.map((f) => (
                 <div key={f.label}>
                   <dt className="eyebrow text-text-faint">{f.label}</dt>

@@ -1,5 +1,33 @@
-import RetrievalTrace from "./RetrievalTrace";
+"use client";
 
+import ProfileCard from "./ProfileCard";
+import { useEffect, useRef } from "react";
+
+function useScrollReveal(ref) {
+  useEffect(() => {
+    if (!ref.current) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("reveal-visible");
+          observer.unobserve(entry.target);
+        }
+      },
+      { threshold: 0.1 }
+    );
+    observer.observe(ref.current);
+    return () => observer.disconnect();
+  }, [ref]);
+}
+function RevealSection({ children, className = "" }) {
+  const ref = useRef(null);
+  useScrollReveal(ref);
+  return (
+    <div ref={ref} className={`reveal-section ${className}`}>
+      {children}
+    </div>
+  );
+}
 export default function Hero() {
   return (
     <section id="top" className="relative overflow-hidden border-b border-line grid-bg">
@@ -57,10 +85,15 @@ export default function Hero() {
         </div>
 
         <div className="lg:justify-self-end lg:w-full">
-          <RetrievalTrace />
-          <p className="eyebrow mt-3 text-center text-text-faint">
-            live trace from the Telecom RAG project, replayed
-          </p>
+          {/* Terminal profile card — mirrors Hero's RetrievalTrace */}
+          <RevealSection>
+            <div className="lg:justify-self-end lg:w-full">
+              <ProfileCard />
+              <p className="eyebrow mt-3 text-center text-text-faint">
+                aryan@portfolio ~ profile.json
+              </p>
+            </div>
+          </RevealSection>
         </div>
       </div>
     </section>
