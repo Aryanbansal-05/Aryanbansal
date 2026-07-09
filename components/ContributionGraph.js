@@ -143,7 +143,7 @@ export default function ContributionGraph() {
             ) : (
               <>
                 <span className="text-retrieve font-semibold">{total?.toLocaleString()}</span>{" "}
-                contributions in the last year
+                contributions in the year {new Date().getFullYear()} 
               </>
             )}
           </p>
