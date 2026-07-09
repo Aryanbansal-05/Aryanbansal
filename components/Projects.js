@@ -44,18 +44,18 @@ const FEATURED = [
 
 const OTHER = [
   {
-    title: "WanderLust",
+    title: "HelpDesk.AI",
     description:
-      "A hotel booking platform with listing search, reviews, and a booking flow modeled on real OTA UX patterns.",
-    stack: ["Node.js", "Express", "MongoDB", "EJS", "Passport.js"],
-    href: "https://github.com/Aryanbansal-05/Wanderlust"
+      "An AI-powered helpdesk platform that uses NLP and OCR to classify support tickets, detect duplicate incidents, and speed up resolution.",
+    stack: ["FastAPI", "DistilBERT", "Supabase", "React", "Python"],
+    href: "https://github.com/Aryanbansal-05/HELPDESK.AI"
   },
   {
-    title: "Crypto-Prophet",
+    title: "Eventra",
     description:
-      "A crypto price prediction tool exploring time-series forecasting on volatile market data using ML models.",
-    stack: ["Python", "Pandas", "Scikit-learn", "Matplotlib"],
-    href: "https://github.com/Aryanbansal-05/Crypto-Prophet"
+      "An event and hackathon management platform covering discovery, registration, dashboards, and organizer tools end to end.",
+    stack: ["React", "Vite", "Tailwind CSS", "Framer Motion"],
+    href: "https://github.com/Aryanbansal-05/Eventra"
   }
 ];
 
