@@ -10,11 +10,11 @@ const FACTS = [
   },
   {
     label: "Currently",
-    value: "AI Analytics Engineer Intern @ Cisco Networking Academy"
+    value: "AI Analytics Engineer virtual Intern @ Cisco Networking Academy"
   },
   {
     label: "Studying",
-    value: "B.Tech Computer Science, Thapar Institute"
+    value: "B.Tech Computer Science, Thapar Institute of Engineering and Technology"
   },
   {
     label: "Certified",
