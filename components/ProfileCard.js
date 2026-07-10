@@ -49,7 +49,6 @@ export default function ProfileCard() {
         if (lineIndex >= LINES.length) {
           clearInterval(intervalId);
           timeoutId = setTimeout(() => {
-            // Bump cycle first so keys change → fresh DOM nodes → animate-rise replays
             setCycle((c) => c + 1);
             setVisibleLines(0);
             startTyping(currentCycle + 1);
@@ -66,7 +65,6 @@ export default function ProfileCard() {
     };
   }, []);
 
-  // Blinking cursor
   useEffect(() => {
     const blink = setInterval(() => setCursor((c) => !c), 530);
     return () => clearInterval(blink);
@@ -83,14 +81,16 @@ export default function ProfileCard() {
         <span className="h-2.5 w-2.5 rounded-full" style={{ backgroundColor: "#8C6528" }} />
         <span className="h-2.5 w-2.5 rounded-full" style={{ backgroundColor: "#2C7A73" }} />
         <span className="h-2.5 w-2.5 rounded-full bg-text-faint" />
-        <span className="ml-2 text-text-faint text-xs">aryan@portfolio ~ profile.json</span>
+        <span className="ml-2 text-text-faint text-xs truncate">aryan@portfolio ~ profile.json</span>
       </div>
 
       {/* JSON body */}
-      <div className="p-4 space-y-0.5 h-[360px]">
+      <div className="p-4 space-y-0.5 min-h-[430px] sm:min-h-[380px] overflow-hidden">
         {LINES.slice(0, visibleLines).map((line, i) => (
-          // Key includes cycle so React remounts each line fresh → animate-rise replays
-          <div key={`${cycle}-${i}`} className="text-xs leading-relaxed animate-rise">
+          <div
+            key={`${cycle}-${i}`}
+            className="text-xs leading-relaxed animate-rise whitespace-pre-wrap break-words"
+          >
             {line.valuePart ? (
               <>
                 <span className="text-retrieve">{line.text}</span>
@@ -118,4 +118,3 @@ export default function ProfileCard() {
     </div>
   );
 }
-
