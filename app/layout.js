@@ -4,7 +4,7 @@ const BASE_URL = "https://aryanbansal.dev";
 
 export const metadata = {
   metadataBase: new URL(BASE_URL),
-  title: "Aryan Bansal — AI/ML Engineer",
+  title: "Aryan Bansal",
   description:
     "AI/ML engineer building retrieval-grounded systems and full-stack products. FAISS, RAG pipelines, Spring Boot, Kafka, MERN. B.Tech CSE @ Thapar Institute.",
   keywords: [
