@@ -7,14 +7,12 @@ const EDU = [
     period: "Aug 2023 — Present",
     institution: "Thapar Institute of Engineering & Technology",
     degree: "B.Tech in Computer Science Engineering",
-    detail: "CGPA: 7.8",
     badges: ["Patiala, Punjab", "Year 2 of 4"]
   },
   {
     period: "July 2023",
     institution: "St. Fateh Singh Convent School",
     degree: "Class 12 — Senior Secondary Education",
-    detail: "87.2%",
     badges: ["CBSE"]
   }
 ];
