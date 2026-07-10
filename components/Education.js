@@ -7,7 +7,7 @@ const EDU = [
     period: "Aug 2023 — Present",
     institution: "Thapar Institute of Engineering & Technology",
     degree: "B.Tech in Computer Science Engineering",
-    badges: ["Patiala, Punjab", "Year 2 of 4"]
+    badges: ["Patiala, Punjab", "Year 4"]
   },
   {
     period: "July 2023",
