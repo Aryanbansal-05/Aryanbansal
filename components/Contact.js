@@ -68,7 +68,7 @@ export default function Contact() {
 
       <footer className="border-t border-line">
         <div className="section-container flex flex-col items-center justify-between gap-3 py-6 text-xs text-text-faint sm:flex-row">
-          <p>© {new Date().getFullYear()} Aryan Bansal. Built with Coffee at night.</p>
+          <p>© {new Date().getFullYear()} Aryan Bansal. Built with Coffee in Manali.</p>
           <p className="font-mono">retrieved · reasoned · shipped</p>
         </div>
       </footer>
