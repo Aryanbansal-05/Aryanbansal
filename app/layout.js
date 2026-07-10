@@ -18,7 +18,7 @@ export const metadata = {
     "Thapar Institute"
   ],
   openGraph: {
-    title: "Aryan Bansal — AI/ML Engineer",
+    title: "Aryan Bansal",
     description:
       "AI/ML engineer building retrieval-grounded systems. RAG pipelines · Spring Boot · MERN. Open to AI/ML roles.",
     url: BASE_URL,
@@ -28,7 +28,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Aryan Bansal — AI/ML Engineer",
+    title: "Aryan Bansal",
     description:
       "AI/ML engineer building retrieval-grounded systems. RAG pipelines · Spring Boot · MERN. Open to AI/ML roles."
   },
