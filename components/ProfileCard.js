@@ -87,7 +87,7 @@ export default function ProfileCard() {
       </div>
 
       {/* JSON body */}
-      <div className="p-4 space-y-0.5 min-h-[260px]">
+      <div className="p-4 space-y-0.5 h-[360px]">
         {LINES.slice(0, visibleLines).map((line, i) => (
           // Key includes cycle so React remounts each line fresh → animate-rise replays
           <div key={`${cycle}-${i}`} className="text-xs leading-relaxed animate-rise">
