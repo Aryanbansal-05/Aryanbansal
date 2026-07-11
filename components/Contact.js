@@ -79,12 +79,6 @@ const CONTACT_LINKS = [
     short: "aryanbansalpvt@gmail.com",
     href: "mailto:aryanbansalpvt@gmail.com",
     Icon: IconEmail
-  },
-  {
-    label: "Phone",
-    short: "+91 8847313843",
-    href: "tel:+918847313843",
-    Icon: IconPhone
   }
 ];
 
