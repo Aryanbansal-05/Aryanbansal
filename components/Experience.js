@@ -8,7 +8,7 @@ const ROLES = [
   {
     period: "May 2026 — Present",
     org: "Cisco Networking Academy",
-    role: "AI Analytics Engineer Intern",
+    role: "AI Analytics Virtual Intern",
     dotColor: "#4CC9C0",
     textColor: "#4CC9C0",
     points: [
