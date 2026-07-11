@@ -31,7 +31,7 @@ const ROLES = [
   {
     period: "Jan 2026",
     org: "JPMorgan Chase — Forage Job Simulation",
-    role: "Software Engineer, Backend Services",
+    role: "Software Engineer - Backend Services",
     dotColor: "#E8A649",
     textColor: "#E8A649",
     points: [
