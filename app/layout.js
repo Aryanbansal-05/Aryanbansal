@@ -1,4 +1,5 @@
 import "./globals.css";
+import CustomCursor from "@/components/CustomCursor";
 
 const BASE_URL = "https://aryanbansal.dev";
 
@@ -41,7 +42,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="dark">
-      <body className="bg-ink text-text antialiased">{children}</body>
+      <body className="bg-ink text-text antialiased" style={{ cursor: "none" }}>
+        <CustomCursor />
+        {children}
+      </body>
     </html>
   );
 }

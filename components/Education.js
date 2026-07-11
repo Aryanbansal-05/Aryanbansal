@@ -67,7 +67,7 @@ export default function Education() {
         <RevealSection>
           <p className="eyebrow text-retrieve">Education</p>
           <h2 className="mt-3 font-display text-3xl font-semibold text-text">
-            Where I'm coming from
+            Where I&apos;m coming from
           </h2>
         </RevealSection>
 
@@ -108,7 +108,7 @@ export default function Education() {
 
         {/* Leadership */}
         <RevealSection className="mt-16 border-t border-line pt-10">
-          <p className="eyebrow text-generate">Leadership & Extracurriculars</p>
+          <p className="eyebrow text-generate">Leadership &amp; Extracurriculars</p>
           <div className="mt-6 grid gap-4 sm:grid-cols-2">
             {LEADERSHIP.map((l) => (
               <div

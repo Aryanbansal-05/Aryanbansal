@@ -32,7 +32,7 @@ export default function Hero() {
   return (
     <section id="top" className="relative overflow-hidden border-b border-line grid-bg">
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-ink/0 via-ink/40 to-ink" />
-      <div className="section-container relative grid gap-12 py-20 sm:py-28 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+      <div className="section-container relative grid gap-10 py-20 sm:py-28 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
         <div>
           <p className="eyebrow mb-5 flex items-center gap-2 text-retrieve">
             <span className="h-1.5 w-1.5 animate-pulseDot rounded-full bg-retrieve" />
